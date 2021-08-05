@@ -1,0 +1,1 @@
+QtdChamadosDentro2H = CALCULATE([TotalChamadosC2], FILTER(fAssignment,fAssignment[Diferença Tempo] < 2))
