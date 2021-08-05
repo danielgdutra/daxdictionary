@@ -1,0 +1,24 @@
+Criticidade = 
+var windows = IF(fAssignment[CIId] = 42, RELATED(dC4[priorityId]))
+var seguranca = IF(fAssignment[CIId] = 45, RELATED(dC1[priorityId]))
+var monitoramento = IF(fAssignment[CIId] = 43, RELATED(dC4[priorityId]))
+var bancodedados = IF(fAssignment[CIId] = 44, RELATED(dC1[priorityId]))
+var backup = IF(fAssignment[CIId] = 41, RELATED(dC4[priorityId]))
+var redes = IF(fAssignment[CIId] = 938, RELATED(dC2[priorityId]))
+var servidores = IF(fAssignment[CIId] = 46, RELATED(dC4[priorityId]))
+var dominio = IF(fAssignment[CIId] = 16992, RELATED(dC4[priorityId]))
+var suporte = IF(fAssignment[CIId] = 27807, RELATED(dC4[priorityId]))
+
+
+
+RETURN
+IF(fAssignment[CIId] = 42, windows,
+IF(fAssignment[CIId] = 45, seguranca,
+IF(fAssignment[CIId] = 43, monitoramento,
+IF(fAssignment[CIId] = 44, bancodedados,
+IF(fAssignment[CIId] = 41, backup,
+IF(fAssignment[CIId] = 938, redes,
+IF(fAssignment[CIId] = 46, servidores,
+IF(fAssignment[CIId] = 16992, dominio,
+IF(fAssignment[CIId] = 27807, suporte, 
+19)))))))))
