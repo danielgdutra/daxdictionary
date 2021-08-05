@@ -1,0 +1,1 @@
+QtdChamadosDentro8H = CALCULATE([TotalChamadosC4],FILTER(fAssignment,fAssignment[CIId] = RELATED('dFilas Algar'[CIID])), FILTER(fAssignment,fAssignment[Diferença Tempo] < 8)) - [QtdChamadosFora8H]
