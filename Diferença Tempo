@@ -1,0 +1,12 @@
+Diferença Tempo = 
+
+var horas = DATEDIFF(fAssignment[startDate],fAssignment[endDate],HOUR)
+var dias = DATEDIFF(fAssignment[startDate],fAssignment[endDate],DAY)
+
+var diasemhoras = IF(dias>=1,dias*12,0)
+
+var horastotais = horas - dias
+
+
+RETURN
+horastotais
